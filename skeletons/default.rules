@@ -1,0 +1,1 @@
+alert tcp any any -> any any (msg:"message in here"; flow:to_server,established; content:"";nocase; reference:url,; classtype:attempted-admin; sid:changeme; rev:1; )
